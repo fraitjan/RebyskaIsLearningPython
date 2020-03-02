@@ -1,5 +1,9 @@
 import random
-from helpers.colors import *
+
+BLUE = '\033[94m'
+GREEN = '\033[92m'
+RED = '\033[91m'
+COLOR_RESET = '\033[0m'
 
 animal_list = ["vydra", "tucnak", "ptakopysk", "panda", "koala", "peso"]
 
