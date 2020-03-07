@@ -1,7 +1,8 @@
 from helpers.animals_data import Animals
 from helpers.colors import *
 
-animal_name = ["dog"]
+animal_name = ["penguin", "giraffe", "lion"]
+
 
 a = Animals("./data/anage_data.csv")
 animals = a.get_specific_animal(animal_name)
