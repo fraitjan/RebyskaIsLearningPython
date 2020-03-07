@@ -15,3 +15,4 @@ Z listu odebereš prvek pomocí list.remove(prvek) - v tomto případě např. h
 Vždy se vybere náhodná holka, náhodný kluk a náhodné zvíře.
 Vypiš je podle příkladu, který jsem ti napsal na Messenger - i s barvičkama
 """
+
