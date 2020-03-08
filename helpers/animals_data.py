@@ -9,6 +9,12 @@ class Animals:
             for line in file:
                 self.animals.append(dict([z for z in zip(header, line.split(","))]))
 
+    def get_random_animal_name_weight(self):
+        animal = self.get_random_animal()
+        while not (animal["Common name"] and animal["Adult weight (g)"]):
+            animal = self.get_random_animal()
+        return [animal["Common name"], animal["Adult weight (g)"]]
+
     def get_random_animal(self):
         return random.choice(self.animals)
 

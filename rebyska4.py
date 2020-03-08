@@ -1,13 +1,18 @@
-cislo = int(input("Napis cislo:"))
+import random
 
-if cislo == 69:
-    print("Napsal jsi 69")
-if cislo < 10:
-    print("Toto cislo je hodne male")
-elif 10 <= cislo < 100:
-    print("Toto cislo je stredni")
-elif 100 <= cislo < 1000:
-    print("Toto je celkem velke cislo")
-else:
-    print("Toto je obrovske cislo")
+BLUE = '\033[94m'
+GREEN = '\033[92m'
+RED = '\033[91m'
+COLOR_RESET = '\033[0m'
+
+holky = ["Rebyska", "Miska", "Martinka"]
+kluci = ["Honzik", "Filip", "Misak"]
+zviratka = ["tucnacka", "vydrinku", "psika"]
+
+"""
+Použij while smyčku, která skončí, až se některý list vyprázdní (nic v něm nebude).
+Z listu odebereš prvek pomocí list.remove(prvek) - v tomto případě např. holky.remove["Rebyska"]
+Vždy se vybere náhodná holka, náhodný kluk a náhodné zvíře.
+Vypiš je podle příkladu, který jsem ti napsal na Messenger - i s barvičkama
+"""
 

@@ -1,19 +1,11 @@
 from helpers.animals_data import Animals
 from helpers.colors import *
 
-animal_names = []
+animal_name = ["penguin", "giraffe", "lion"]
+
 
 a = Animals("./data/anage_data.csv")
-
-input_animal = ""
-
-while input_animal.lower() != "q":
-    input_animal = input("Zadej další zvíře (Q pro konec): ")
-    if input_animal != "q":
-        animal_names.append(input_animal)
-
-animals = a.get_specific_animals(animal_names)
-
+animals = a.get_specific_animal(animal_name)
 for animal in animals:
     if animal["Adult weight (g)"]:
         try:
