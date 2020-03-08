@@ -12,7 +12,7 @@ class Animals:
     def get_random_animal(self):
         return random.choice(self.animals)
 
-    def get_specific_animal(self, name):
+    def get_specific_animals(self, name):
         if type(name) == str:
             return self._get_one(name)
         elif type(name) == list:
