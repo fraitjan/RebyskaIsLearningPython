@@ -16,3 +16,12 @@ Vždy se vybere náhodná holka, náhodný kluk a náhodné zvíře.
 Vypiš je podle příkladu, který jsem ti napsal na Messenger - i s barvičkama
 """
 
+while holky and kluci and zviratka:
+    random_holka = random.choice(holky)
+    random_kluk = random.choice(kluci)
+    random_zviratko = random.choice(zviratka)
+    print(f"{RED + random_holka + COLOR_RESET} a {BLUE + random_kluk + COLOR_RESET} spolu mají "
+          f"{GREEN + random_zviratko + COLOR_RESET}")
+    holky.remove(random_holka)
+    kluci.remove(random_kluk)
+    zviratka.remove(random_zviratko)
